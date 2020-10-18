@@ -1,0 +1,37 @@
+<div class="container">
+  <div class="row">
+      <div class="col-md-2 col-sm-1 col-4">
+        <h1 class="main__text"> {{RandomNum1}} </h1>
+      </div>
+
+      <div class="col-md-2 col-sm-1 col-4">
+        <h1 class="main__text"> + </h1>
+      </div>
+
+      <div class="col-md-2 col-sm-1 col-4">
+        <h1 class="main__text"> {{RandomNum2}} </h1>
+      </div>
+
+      <div class="col-md-2 col-sm-1 col-12">
+        <h1 class="main__text"> = </h1>
+      </div>
+
+      <div class="col-md-4 col-sm-6 col-10">
+        <div class="form-field">
+          <input type="text"
+          class="form-control app-success app-error"
+          id="inputform"
+          placeholder="Enter The Solution"
+          required
+          (input)="onSearchChange($event.target.value)"
+          >
+        </div>
+      </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12 mt-5">
+      <p class="Average_value" style="text-align: center;">{{AvgTime.toFixed(2)}} seconds per solution</p>
+    </div>
+  </div>
+</div>
